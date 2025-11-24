@@ -6,7 +6,7 @@ See at: [https://marcus-adair.github.io/reformco_coding_challenge/](https://marc
 
 Note: This defintely has room for imporovement and polishing, this was my first go at using GSAP, which is an awesome package!
 
-Basically all of the HTML and CSS was written by hand. I used GSAP Docs, AI (ChatGPT), [this youtube video](https://www.youtube.com/watch?v=AW1yfBKRMKc&t=203s), and experimentation to learn and implement the page. I'm excited to learn more about GSAP!
+Basically all of the HTML and CSS was written by hand. I used GSAP Docs, AI (ChatGPT), [this youtube video](https://www.youtube.com/watch?v=AW1yfBKRMKc&t=203s), and experimentation to learn and implement the animations. I'm excited to learn more about GSAP!
 
 ### Future Work
 
