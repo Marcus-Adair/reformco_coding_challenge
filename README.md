@@ -2,6 +2,8 @@
 
 A React app implementing some 2D animations, built with [GSAP](https://gsap.com/) and styled using Tailwind CSS.
 
+See at: [https://marcus-adair.github.io/reformco_coding_challenge/](https://marcus-adair.github.io/reformco_coding_challenge/)
+
 Note: This defintely has room for imporovement and polishing, this was my first go at using GSAP, which is an awesome package!
 
 ## Setup
