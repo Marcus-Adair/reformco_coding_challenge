@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 
 export function AnimatedButtons() {
-  const [toggled, setToggled] = useState(false);
+  const [reverseToggled, setReverseToggled] = useState(false);
 
   const arrowRef = useRef<SVGSVGElement>(null);
   const arrowRef2 = useRef<SVGSVGElement>(null);
@@ -18,7 +18,7 @@ export function AnimatedButtons() {
         duration: 0.6,
         ease: "power2.out",
         modifiers: {
-          x: (x) => `${parseFloat(x) % 26}px`, // wrap around
+          x: (x) => `${parseFloat(x) % 26}px`, // reset x pos
         },
       });
     });
@@ -28,16 +28,16 @@ export function AnimatedButtons() {
     <div className="flex justify-start">
       <motion.div
         layout
-        animate={{ color: toggled ? "#00B684" : "#30715D" }}
+        animate={{ color: reverseToggled ? "#00B684" : "#30715D" }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         className={`flex items-center gap-2 ${
-          toggled ? "flex-row-reverse" : ""
+          reverseToggled ? "flex-row-reverse" : ""
         }`}
       >
         <motion.button
           key="text"
           layout
-          onClick={() => setToggled(!toggled)}
+          onClick={() => setReverseToggled(!reverseToggled)}
           className="border rounded-full h-8 px-6.5 bg-[#fbfaf6] z-40 cursor-pointer tracking-tight whitespace-nowrap"
         >
           Get a Quote Started Today

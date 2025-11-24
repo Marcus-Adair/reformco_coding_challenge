@@ -13,7 +13,7 @@ body {
   font-weight: 400;
 }
 
-/* Infite scroll animation  ------------------------------- */
+/* Infite scroll animation for "get-in-the-way" list in AnimatedHeader ----------- */
 @keyframes infinite-scroll {
   0% {
     transform: translateX(0);
