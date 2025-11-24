@@ -16,13 +16,14 @@ export function CardScroller() {
       const cardWidth = cards[0].offsetWidth;
       const containerWidth = cardRowRef.current.parentElement!.offsetWidth;
 
-      // Start the row centered
+      // Ceneter starting card in view
       gsap.set(cardRowRef.current, {
-        x: (containerWidth - cardWidth) / 2, // centers first card
+        x: (containerWidth - cardWidth) / 2,
       });
 
       const timeline = gsap.timeline({ repeat: -1 });
 
+      // 4 Business cards to loop over (grow --> shrink --> move to next)
       for (let i = 0; i < 4; i++) {
         timeline.to(cards[i], {
           scale: 0.9,

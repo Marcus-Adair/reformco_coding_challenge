@@ -6,6 +6,12 @@ See at: [https://marcus-adair.github.io/reformco_coding_challenge/](https://marc
 
 Note: This defintely has room for imporovement and polishing, this was my first go at using GSAP, which is an awesome package!
 
+Basically all of the HTML and CSS was written by hand. I used GSAP Docs, AI (ChatGPT), and [this youtube video](https://www.youtube.com/watch?v=AW1yfBKRMKc&t=203s) to learn and implement the page. I'm excited to learn more about GSAP!
+
+### Future Work
+
+- Optimize for mobile & different browsers, register colors as vars instead of hardcoding hex colors, smoother transitions/better centering for CardScrolle, adjust ease values and more to make look like video more, integrate more fonts that just 'soehne-buch.woff2', and more.
+
 ## Setup
 
 1. Clone the repo:

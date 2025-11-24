@@ -9,30 +9,30 @@ export default function AnimatedHeader() {
   useGSAP(() => {
     if (!shrinkDivRef.current || !changeColorSpanRef.current) return;
 
-    const tl = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: 3 });
+    const timeline = gsap.timeline({ repeat: -1, yoyo: true, repeatDelay: 3 });
 
     // Shrink
-    tl.to(shrinkDivRef.current, {
+    timeline.to(shrinkDivRef.current, {
       width: 0,
       height: 0,
       duration: 3,
       ease: "power1.inOut",
     });
-    tl.to(shrinkDivRef.current, { opacity: 0, duration: 0 });
-    tl.to(changeColorSpanRef.current, {
+    timeline.to(shrinkDivRef.current, { opacity: 0, duration: 0 });
+    timeline.to(changeColorSpanRef.current, {
       color: "#00B684",
       duration: 0.3,
     });
 
-    tl.to({}, { duration: 4 }); // Pause
+    timeline.to({}, { duration: 4 }); // Pause
 
     // Reverse
-    tl.to(changeColorSpanRef.current, {
+    timeline.to(changeColorSpanRef.current, {
       color: "#153E2A",
       duration: 0.3,
     });
-    tl.to(shrinkDivRef.current, { opacity: 1, duration: 0 });
-    tl.to(shrinkDivRef.current, {
+    timeline.to(shrinkDivRef.current, { opacity: 1, duration: 0 });
+    timeline.to(shrinkDivRef.current, {
       width: "550px",
       height: "65px",
       duration: 3,

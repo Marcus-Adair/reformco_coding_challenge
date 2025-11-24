@@ -28,19 +28,16 @@ export function Card({
     >
       {/* Top half */}
       <div className="flex justify-between gap-2">
-        {/* <span>PIC</span> */}
         <img src={imgSrc} alt="user_pic" />
 
-        <div className="flex flex-col text-right">
-          <span className="text-[#6E9E8FCC] text-xl tracking-widest">
+        <div className="flex flex-col text-right tracking-widest">
+          <span className="text-[#6E9E8FCC] text-xl ">
             {name.toUpperCase()}
           </span>
-          <span className="text-[#6E9E8F66] text-sm tracking-widest">
+          <span className="text-[#6E9E8F66] text-sm">
             {position.toUpperCase()}
           </span>
-          <span className="text-[#6E9E8F66] text-xs mt-4 tracking-widest">
-            {id}
-          </span>
+          <span className="text-[#6E9E8F66] text-xs mt-4">{id}</span>
         </div>
       </div>
 
