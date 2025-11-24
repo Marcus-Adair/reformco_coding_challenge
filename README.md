@@ -10,7 +10,7 @@ Basically all of the HTML and CSS was written by hand. I used GSAP Docs, AI (Cha
 
 ### Future Work
 
-- Optimize for mobile & different browsers, register colors as vars instead of hardcoding hex colors, smoother transitions/better centering for CardScroller ( adjust ease values and more to make look like video more?), integrate more fonts that just 'soehne-buch.woff2', and more.
+- Optimize for mobile & different browsers, register colors as vars instead of hardcoding hex colors, smoother transitions/better centering for CardScroller (adjust ease values and more to make look like video more?), integrate more fonts besides just 'soehne-buch.woff2', and more.
 
 ## Setup
 
